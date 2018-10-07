@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SignIn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/docs/4.1/examples/sign-in/signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center" style="background-image: url(Imagenes/Fondo3.jpg);">
+      <form class="form-signin" method="post" action="LogIn">
+          <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+          <h1 class="h3 mb-3 font-weight-normal">Inicie sesión</h1>
+          <label for="inputEmail" class="sr-only">Nombre de usuario</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="Usuario" name="USER">
+          <label for="inputPassword" class="sr-only">Contraseña</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" name="PASSWORD">
+          <div class="checkbox mb-3">
+              <label>
+                  <input type="checkbox" value="remember-me"> Recordarme
+              </label>
+          </div>
+          <input class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión
+          <p>¿No tienes cuenta? Regístrate <a href="/JustSee/JSP/SignUp.jsp">aquí</a></p>
+          <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      </form>
+  </body>
+</html>
+
