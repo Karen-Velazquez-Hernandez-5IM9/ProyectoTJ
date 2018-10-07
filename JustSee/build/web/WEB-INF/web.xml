@@ -8,6 +8,10 @@
         <servlet-name>Registro</servlet-name>
         <servlet-class>JustSee_Servlets.Registro</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerRol</servlet-name>
+        <servlet-class>JustSee_Servlets.VerRol</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LogIn</servlet-name>
         <url-pattern>/LogIn</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Registro</servlet-name>
         <url-pattern>/Registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerRol</servlet-name>
+        <url-pattern>/VerRol</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

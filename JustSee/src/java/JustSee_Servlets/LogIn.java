@@ -58,10 +58,21 @@ public class LogIn extends HttpServlet {
                 } else {
                     Rol = cone.Rol(usu, pass);
                     sesion.setAttribute("Rol", Rol);
+                    
+                    if(Rol.equals("1"))
+                        response.sendRedirect("/JustSee/JSP/Welcome.jsp");
+                    else{
+                        if(Rol.equals("2"))
+                            response.sendRedirect("/JustSee/JSP/WelcomeU2.jsp");
+                        else
+                            response.sendRedirect("/JustSee/JSP/WelcomeU3.jsp");
+                    }
+                        
+                        
                 }
             }
             
-            response.sendRedirect("/JustSee/JSP/Welcome.jsp");
+            response.sendRedirect("/JustSee/JSP/WelcomeU3.jsp");
 
         } else {
             rdObj=request.getRequestDispatcher("SignUp.html");
